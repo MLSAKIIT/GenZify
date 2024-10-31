@@ -25,7 +25,6 @@ body{
   display: grid;
   grid-template-columns: 1fr 1px 2fr 1px 1fr;
   column-gap: 15px;
-  height: 100vh;
   margin-top: 40px;
 }
 
@@ -38,9 +37,9 @@ border-right: 2px solid red;
 }
 
 .content{
-  min-height: 100vh;
   background-color: rgb(219, 219, 219);
   margin: 50px;
+  padding: 20px;
 }
 
 .logo{
@@ -61,6 +60,28 @@ margin: 0;
 padding-bottom: 45px;
 }
 
+.submission-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.submit {
+  padding: 10px 15px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #ccc;
+ display: inline-block;
+}
 
 .emo{
   position: absolute;
@@ -91,4 +112,11 @@ p{
   display: inline-block;
   width: 50%;
   justify-content: center;
+}
+
+.highlight{
+  background: linear-gradient(to right, rgb(54, 110, 232), rgb(235, 187, 82), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
 }
